@@ -1,0 +1,51 @@
+/* Desktop layout enhancements (min-width: 640px) */
+
+header {
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#menu {
+    display: none;
+}
+
+/* Navigation: horizontal bar */
+.navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--brand);
+}
+
+.navigation a {
+    color: #fff;
+    border: none;
+}
+
+.navigation a:hover {
+    background: #0859a8;
+}
+
+/* About + Photo side-by-side */
+.about-photo {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me,
+.student-photo {
+    flex: 1;
+}
+
+.student-phot {
+    text-align: center;
+}
+
+/* Course grid: 2-3 columns */
+.courses-grid {
+    display: flex;
+    flex-direction: row; /* arrange in horizontal row */
+    flex-wrap: wrap; /* allow wrapping to next line */
+    gap: 1rem;
+    justify-content: center;
+}

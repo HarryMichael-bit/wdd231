@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Michael Asamaoh's responsive Web development portfolio, featuring course projects and learning resources.">
+    <meta name="author" content="Michael Asamoah">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 640px)">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph Meta Tags for Facebook-->
+     <meta property="og:title" content="Michael's Dev Portfolio | Course Home Page" />
+     <meta property="og:description" content="Explore Michael Asamoah's responsive web development portfolio,  featuring course projects, resorces and real-world coding skills." />
+     <meta property="og:image" content="https://github.com/HarryMichael-bit/wdd231/blob/main/images/michael.jpg" />
+     <meta property="og:url" content="https://github.com/HarryMichael-bit/wdd231" />
+     <meta property="og:type" content="website" />
+     <meta property="og:locale" content="en_US" />
+     <meta property="og:site_name" content="Michael's Dev Portfolio" />
+</head>
+<body>
+    <header>
+        <img src="images/michael.svg" alt="Site Logo" class="logo">
+        <span class="site-name">Michael's Dev Portfolio</span>
+        <button id="menu" aria-label="Menu">&#9776;</button>
+    </header>
+
+    <nav class="navigation" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Chamber Project</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-photo">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    My name is Michael Asamoah, a passionate Software Development and Engineering student 
+                    at BYU-IDAHO. I specialize in building responsive, accessible websites using HTML, CSS,
+                    and JavaScript. I thrive on solving real-world problems through clean code and intuitive
+                    design. Beyond the screen, I'm a lifelong learner who values collaboration, creativity
+                    and continuous improvement. 
+                </p>
+            </div>
+
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/michael.jpg" alt="Student Photo">
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificate Courses</h2>
+            <p>
+                Explore the certificate's required courses. Use the filters to view All, WDD, or CSE courses.
+                Completed courses are styled distinctly.
+            </p>
+
+            <div class="filters">
+                <button id="filter-all" class="filter active">All</button>
+                <button id="filter-wdd" class="filter">CSE</button>
+                <button id="filter-cse" class="filter">WDD</button>
+            </div>
+
+            <div id="courses" class="courses-grid"></div>
+            <p class="credits-total">Total credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p>
+                Helpful links, documentation, and references to support your learning and audits.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/HarryMichael-bit" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/michael-asamoah-25035933a?utm_source=share&utm_campaign=share_via&ut-m_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn Logo">
+            </a>
+            <a href="https://x.com/mharryjazz97?s=21" target="_blank" aria-label="X">
+                <img src="images/twitter-x.svg" alt="X Logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Michael Dev | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Papas Pizza",
+        "address": "1American House, La-Bawaleshie Road, Accra",
+        "phone": "+233 30 824 9486",
+        "website": "https://www.papaspizzaghana.com",
+        "image": "papaspizzaghana.png",
+        "membership": 3,
+        "description": "Best pizza restaurant in Accra."
+    },
+    {
+        "name": "Movenpick Ambassador Hotel",
+        "address": "Independence Avenue, Accra",
+        "phone": "+233 30 261 1000",
+        "website": "https://www.movenpick.accor.com/en/africa/gh",
+        "image": "movenpick.png",
+        "membership": 3,
+        "description": "Number 1 luxurious hotel in Accra."
+    },
+    {
+        "name": "Tropical Cables",
+        "address": "Steel Works Rd, Tema",
+        "phone": "+233 24 339 2327",
+        "website": "https://www.tropicalcables.com",
+        "image": "tropicalcables.png",
+        "membership": 2,
+        "description": "Ghana's best electricity cables producer."
+    },
+    {
+        "name": "Awuku Photos",
+        "address": "La-Bawaleshie Rd, Accra",
+        "phone": "+233 24 394, 5015",
+        "website": "https://www.awukuphotos.com",
+        "image": "awukuphotos.png",
+        "membership": 2,
+        "description": "Best Photography Studio in Accra."
+    },
+    {
+        "name": "AccraTech Solutions",
+        "address": "12 Ring Road East, Accra",
+        "phone": "+233 30 222 3344",
+        "website": "https://accratech.com.com",
+        "image": "accratech.png",
+        "membership": 3,
+        "description": "Leading provider of IT infrastructure and cloud services in Accra."
+    },
+    {
+        "name": "EcoBuild Ghana",
+        "address": "88 Labone Crescent, Accra",
+        "phone": "+233 20 123 4567",
+        "website": "https://www.ecobuildghana.com",
+        "image": "ecobuilds.png",
+        "membership": 1,
+        "description": "Sustainable construction firm focused on green building practices."
+    },
+    {
+        "name": "Golden Palm Foods",
+        "address": "45 Osu Oxford Street, Accra",
+        "phone": "+233 24 567 8901",
+        "website": "https://www.goldenpalmfoods.com",
+        "image": "goldenpalm.png",
+        "membership": 2,
+        "description": "Best Organic food distributor."
+    }
+]

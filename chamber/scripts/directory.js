@@ -6,11 +6,15 @@ const listBtn = document.getElementById("listBtn");
 gridBtn.addEventListener("click", () => {
     gridView.classList.remove("hidden");
     listView.classList.add("hidden");
+    gridView.innerHTML = ""; // Clear previous content
+    loadMembers(); // Reload members for grid
 });
 
 listBtn.addEventListener("click", () => {
     listView.classList.remove("hidden");
-    gridView.classList.add("hidden");
+  gridView.classList.add("hidden");
+  listView.innerHTML = ""; // Clear previous content
+  loadMembers();
 });
 
 async function loadMembers() {
@@ -34,7 +38,7 @@ function renderGrid(members) {
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><a href="${member.website}" target="_blank">Visit Website</a></p>
             <p><strong>Membership Level:</strong> ${["Member", "Silver", "Gold"][member.membership - 1]}</p>
-          </div
+          </div>
         `;
         card.addEventListener("click", () => {
             card.classList.toggle("open");

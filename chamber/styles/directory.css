@@ -111,3 +111,32 @@ tr:nth-child(even) {
 .container .child {
     color: red;
 }
+
+@media (max-width: 600px) {
+    #gridView {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        padding: 0.5rem;
+    }
+
+    .member-card img {
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    tablle th, table td {
+        font-size: 0.9re;
+        padding: 0.5rem;
+    }
+}
+
+#gridView, #listView {
+    transition:  opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

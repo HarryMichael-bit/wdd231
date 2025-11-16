@@ -36,9 +36,6 @@ nav a.active {
     margin: 1rem;
 }
 
-.hidden {
-    display: none;
-}
 
 .visually-hidden {
     position: absolute;
@@ -126,7 +123,7 @@ tr:nth-child(even) {
         object-fit: cover;
     }
 
-    tablle th, table td {
+    table th, table td {
         font-size: 0.9re;
         padding: 0.5rem;
     }
@@ -139,4 +136,106 @@ tr:nth-child(even) {
 .hidden {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.forecast-grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.forecast-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.spotlights {
+    padding: 1rem;
+}
+
+.spotlight-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.weather-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.weather-info p {
+    margin: 0.2rem 0;
+}
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* default: stacked */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on desktop */
+    }
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Accra Chamber of Commerce. Discover events, weather, and member spotlights.">
+    <meta name="author" content="Michael">
+    <title>Accra Chamber Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="images/x-icon">
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Accra | Chamber Home">
+    <meta property="og:description" content="Welcome to the Accra Chamber of Commerce">
+    <meta property="og:image" content="https://github.com/HarryMichael-bit/wdd231/chamber/images/accra.jpg">
+    <meta property="og:url" content="https://github.com/HarryMichael-bit/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Accra Chamber Home">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Accra Chamber of Commerce</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: scaleble, responsive image with CTA -->
+        <section class="hero" aria-label="Hero">
+            <img src="images/accrahero.jpg" alt="Accra skyline and business district">
+            <a href="join.html" class="hero-cta">Keynote Tickets</a>
+        </section>
+
+        <!-- Content grid: Events | Current Weather | Weather Forecast -->
+        <section class="content-grid">
+            <article class="panel events">
+                <h2>Events</h2>
+                <ul>
+                    <li><strong>Business Networking Mixer</strong> - Nov 20</li>
+                    <li><strong>Entrepreneur Workshop</strong> - Nov 25</li>
+                    <li><strong>SME Funding Clinic</strong> - Dec 2</li>
+                </ul>
+            </article>
+
+            <article class="panel current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-row">
+                    <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+                    <div id="weather-current" class="weather-info"></div>
+                </div>
+            </article>
+
+            <article class="panel weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="weather-forecast" class="forecast-grid"></div>
+            </article>
+        </section>
+
+        <!-- Spotlights -->
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accra Chamber of Commerce<br>
+            37 Trinity Avenue<br>
+            Accra, Ghana 00233<br>
+            info@accrachamber.org<br>
+            +233 544 821788</p>
+
+        <div class="social-row">
+            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+
+        <p>WDD231 Class Project<br>
+            Michael Asamoah<br>
+            &copy; <span id="year"></span> Accra Chamber of Commerce<br>
+            Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

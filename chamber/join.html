@@ -15,7 +15,7 @@
     <!-- Facebook Open Graph Meta -->
     <meta property="og:title" content="Join Page Accra | Chamber">
     <meta property="og:description" content="Apply to be a member the Accra Chamber of Commerce">
-    <meta property="og:image" content="https://github.com/HarryMichael-bit/wdd231/chamber/accrahero.jpg">
+    <meta property="og:image" content="https://github.com/HarryMichael-bit/wdd231/chamber/images/accrahero.jpg">
     <meta property="og:url" content="https://github.com/HarryMichael-bit/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -58,7 +58,7 @@
 
                 <label>
                     Organizational Title:
-                    <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization">
+                    <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}" required>
                 </label>
 
                 <label>
@@ -120,7 +120,7 @@
      <dialog id="np-modal">
         <h3>NP Membership Benefits</h3>
         <p>No fee. Access to community events and basic training.</p>
-        <button onclick="document.getElementById('np-modal').close()">Close</button>
+        <button class="close-btn" data-modal="np-modal">Close</button>
      </dialog>
 
      <dialog id="bronze-modal">

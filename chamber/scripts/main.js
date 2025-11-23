@@ -119,6 +119,15 @@ document.querySelectorAll('.card a').forEach(link => {
   });
 });
 
+// ===== MODAL CLOSE BUTTONS =====
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modalId = btn.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    if (modal) modal.close();
+  });
+});
+
 // ===== THANK YOU PAGE LOGIC =====
 function loadThankYouData() {
   const params = new URLSearchParams(window.location.search);

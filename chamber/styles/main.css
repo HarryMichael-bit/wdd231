@@ -359,3 +359,71 @@ dialog button:hover {
     from { opacity: 0; transform: translateY(20px); }
     to {opacity: 1; transform: translateY(0); }
 }
+
+/* Discover Page Grid Layout */
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Small screens: single column */
+.grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "card1 card2"
+          "card3 card4"
+          "card5 card6"
+          "card7 card8";
+    }
+}
+
+@media (min-width: 1025px) {
+    .grid-conatiner {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+          "card1 card2 card3 card4"
+          "card5 card6 card7 card8";
+    }
+}
+
+/* Hover effects for Discover page images (desktop only) */
+@media (min-width: 641px) {
+    .card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+        cursor: pointer;
+    }
+}

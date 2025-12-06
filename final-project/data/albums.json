@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Shades of Grace Maiden Concert",
+        "year": "2020",
+        "image": "images/concert1.jpg",
+        "location": "Legon Seventh Day Adventist Church, Accra-Ghana",
+        "description": "Our first grand performance in Accra, featuring Pastor T.K Mensah, engaging audience in a spirit field prayer sessions.",
+        "highlights": ["Ministrations", "Short Sermons", "Touchy Testominies"]
+    },
+    {
+        "title": "Grace on Wheels Concert",
+        "year": "2021",
+        "image": "images/concert2.jpg",
+        "location": "Madina Central Seventh Day Adventist Church, Accra-Ghana",
+        "description": "A spirit field performance in Madina-Accra, celebrating contemporary Choral gospel music.",
+        "highlights": ["Ministrations", "Drama", "Spoken words"]
+    },
+    {
+        "title": "Shades of Grace 2nd Edition Concert",
+        "year": "2022",
+        "image": "images/concert3.jpg",
+        "location": "Legon Seventh Day Adventist Church, Accra-Ghana",
+        "description": "Another grand performance in Accra, featuring contemporary chorale groups.",
+        "highlights": ["Ministrations", "Choir collaborations", "Soloist Showcase"]
+    }
+]

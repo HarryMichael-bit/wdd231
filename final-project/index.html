@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Euphony GH, a contemporary chorale music group. Explore performances, members, and audition info.">
+    <meta name="author" content="Michael Asamoah">
+    <title>Euphony GH | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Open Graph Metadata -->
+     <meta property="og:title" content="Euphony GH Music Group">
+     <meta property="og:description" content="Experience the harmony of Euphony GH. View performances, meet members, and audition.">
+     <meta property="og:image" content="images/euphony-hero.jpg">
+     <meta property="og:url" content="https://harrymichael-bit.github.io/wdd231/final-project/">
+     <meta property="og:type" content="website">
+</head>
+
+<body>
+    <header>
+        <img src="images/euphony-logo.svg" alt="Euphony GH logo" class="logo">
+        <h1 class="site-title">Euphony GH</h1>
+        <button id="menu" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+    </header>
+
+    <nav id="primary-nav" class="navigation" aria-label="Main Navigation">
+        <a href="index.html" aria-current="page" class="active">Home</a>
+        <a href="auditions.html">Auditions</a>
+        <a href="albums.html">Albums & Tours</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/euphony-hero.jpg" alt="Euphony GH performing" loading="eager">
+            <h2>Discover the harmony of voices</h2>
+            <p>Welcome to Euphony GH, where contemporary chorale muisc meets elegance and soul.</p>
+            <a href="auditions.html" class="cta-button">Join Us</a>
+        </section>
+
+        <section id="concerts">
+            <h2>Maiden Concerts</h2>
+            <div id="concert-gallery" class="gallery"></div>
+        </section>
+
+        <section id="members">
+            <h2>Meet our Members</h2>
+            <div id="member-cards" class="grid"></div>
+        </section>
+    </main>
+
+    <section id="youtube">
+        <h2>Watch Our Perfomances</h2>
+        <p>Experience the harmony of Euphony GH on our official Youtube channel.</p>
+        <a href="https://youtube.com/@euphonygh?si=TuZj39Jy_JON9kGk" target="_blank" class="youtube-btn">Visit YouTube</a>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="https://youtube.com/@euphonygh?si=TuZj39Jy_JON9kGk" target="_blank" aria-label="GitHub">
+                <img src="images/youtube.svg" alt="Youtube Logo">
+            </a>
+            <a href="https://www.instagram.com/euphony_gh?igsh=MTYxNWF0NGaThzdQ==" target="_blank" aria-label="LinkedIn">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="https://facebook.com/EuphonyGH" target="_blank" aria-label="X">
+                <img src="images/facebook.svg" alt="facebook Logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Euphony GH | Ghana</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

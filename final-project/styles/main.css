@@ -1,0 +1,267 @@
+/* Golbal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & fonts */
+body {
+    font-family: 'Opn Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3F51B5;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 1rem;
+    background: #333;
+    padding: 0.5rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navigation a.active, 
+.navigation a:hover {
+    background: #FF6F61;
+    border-radius: 4px;
+}
+
+/* Hero sections */
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Album grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Concerts gallery */
+#concert-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+}
+
+/* Members grid */
+#member-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.concert-card, .member-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.concert-card img, .member-card img {
+    width: 20%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.album-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.album-info {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.details-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background: #e85a50;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #3F51B5;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2c3e91;
+}
+
+/* Footer */
+footer {
+    background: #3F51B5;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#youtube {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f1f1f1;
+}
+
+#youtube h2 {
+    margin-bottom: 1rem;
+    color: #3F51B5;
+}
+
+.youtube-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #FF0000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.youtube-btn:hover {
+    background: #cc0000;
+}
+
+/* Responsive nav */
+@media (max-width: 640px) {
+    .navigation {
+        flex-direction: column;
+        display: none;
+    }
+    .navigation.show {
+        display: flex;
+    }
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+
+@media (min-width: 641px) {
+    #menu {
+        display: none;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #FF6F61;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e85a50;
+    transform: scale(1.05);
+}
+
+details { 
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5rem;
+}
+
+summary.details-btn {
+    cursor: pointer; 
+    padding: 0.5rem 1rem;
+    background: #FF6F61;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    list-style: none;
+}
+
+summary.details-btn:hover {
+    background: #e85a50;
+}
+
+.album-info {
+    margin-top: 1rem;
+}

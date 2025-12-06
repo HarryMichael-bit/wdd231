@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Audition for Euphony GH, a contemporary chorale music group. Join us and share your voice.">
+    <meta name="author" content="Michael Asamoah">
+    <title>Euphony GH | Auditions</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Metadata -->
+     <meta property="og:title" content="Euphony GH Music Group">
+     <meta property="og:description" content="Audition for Euphony GH and become part of our contemporary chorale family.">
+     <meta property="og:image" content="images/auditions-hero.jpg">
+     <meta property="og:url" content="https://harrymichael-bit.github.io/wdd231/final-project/auditions.html">
+     <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <img src="images/euphony-logo.svg" alt="Euphony GH logo" class="logo">
+        <h1 class="site-title">Euphony GH</h1>
+        <button id="menu" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+    </header>
+
+    <nav id="primary-nav" class="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="auditions.html" aria-current="page" class="active">Auditions</a>
+        <a href="albums.html">Albums & Tours</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/auditions-hero.jpg" alt="Euphony GH audition poster" loading="eager">
+            <h2>Join the Harmony</h2>
+            <p>We welcome passionate singers to audition for Euphony GH. Share your voice and be part of our journey.</p>
+        </section>
+
+        <section id="audition-form">
+            <h2>Audition Form</h2>
+            <form action="form-response.html" method="get" novalidate>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="voice">Voice Part:</label>
+                <select id="voice" name="voice" required>
+                    <option value="">Select your voice part</option>
+                    <option value="soprano">Soprano</option>
+                    <option value="alto">Alto</option>
+                    <option value="tenor">Tenor</option>
+                    <option value="bass">Bass</option>
+                </select>
+
+                <label for="message">Tell us about your experience:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="cta-button">Submit Audition</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://youtube.com/@euphonygh?si=TuZj39Jy_JON9kGk" target="_blank" aria-label="GitHub">
+                <img src="images/youtube.svg" alt="Youtube Logo">
+            </a>
+            <a href="https://www.instagram.com/euphony_gh?igsh=MTYxNWF0NGaThzdQ==" target="_blank" aria-label="LinkedIn">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="https://facebook.com/EuphonyGH" target="_blank" aria-label="X">
+                <img src="images/facebook.svg" alt="facebook Logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Euphony GH | Ghana</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/form.js"></script>
+</body>

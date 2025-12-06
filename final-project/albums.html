@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Euphony GH albums and tours. View past performances, galleries and highlights.">
+    <meta name="author" content="Michael Asamoah">
+    <title>Euphony GH | Auditions</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Metadata -->
+     <meta property="og:title" content="Euphony GH Music Group">
+     <meta property="og:description" content="Explore Euphony GH albums and tours. View past performances, galleries, and highlights.">
+     <meta property="og:image" content="images/albums-hero.jpg">
+     <meta property="og:url" content="https://harrymichael-bit.github.io/wdd231/final-project/albums.html">
+     <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <img src="images/euphony-logo.svg" alt="Euphony GH logo" class="logo">
+        <h1 class="site-title">Euphony GH</h1>
+        <button id="menu" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+    </header>
+
+    <nav id="primary-nav" class="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="auditions.html">Auditions</a>
+        <a href="albums.html" aria-current="page" class="active">Albums & Tours</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/albums-hero.jpg" alt="Euphony GH albums and tours poster" loading="eager">
+            <h2>Albums & Tours</h2>
+            <p>Relive the harmony of our past performance and  explore upcoming tours.</p>
+        </section>
+
+        <!-- Album Grid Section -->
+         <section id="albums-gallery">
+            <h2>Performance Gallery</h2>
+            <p>Browse through our albums and tours. Each card shows an image with details.</p>
+            <div id="albums-grid" class="gallery-grid"></div>
+         </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://youtube.com/@euphonygh?si=TuZj39Jy_JON9kGk" target="_blank" aria-label="GitHub">
+                <img src="images/youtube.svg" alt="Youtube Logo">
+            </a>
+            <a href="https://www.instagram.com/euphony_gh?igsh=MTYxNWF0NGaThzdQ==" target="_blank" aria-label="LinkedIn">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="https://facebook.com/EuphonyGH" target="_blank" aria-label="X">
+                <img src="images/facebook.svg" alt="facebook Logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Euphony GH | Ghana</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/albums.js"></script>
+</body>
+</html>

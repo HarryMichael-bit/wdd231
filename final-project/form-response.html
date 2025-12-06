@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Euphony GH audition form response page. Dispalys submitted audtion details.">
+    <meta name="author" content="Michael Asamoah">
+    <title>Euphony GH | Audition Response</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Metadata -->
+     <meta property="og:title" content="Euphony GH Audition Response">
+     <meta property="og:description" content="view your submitted audition details for Euphony GH.">
+     <meta property="og:image" content="images/auditions-hero.jpg">
+     <meta property="og:url" content="https://harrymichael-bit.github.io/wdd231/final-project/form-response.html">
+     <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <img src="images/euphony-logo.svg" alt="Euphony GH logo" class="logo">
+        <h1 class="site-title">Euphony GH</h1>
+        <button id="menu" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+    </header>
+
+    <nav id="primary-nav" class="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="auditions.html">Auditions</a>
+        <a href="albums.html">Albums & Tours</a>
+    </nav>
+
+    <main>
+        <section class="response">
+            <h2>Thank You for your Submission</h2>
+            <p>Here are the details you provided:</p>
+
+            <ul>
+                <li><strong>Name:</strong> <span id="resp-name"></span></li>
+                <li><strong>Email:</strong> <span id="resp-email"></span></li>
+                <li><strong>Voice:</strong> <span id="resp-voice"></span></li>
+                <li><strong>Experience:</strong> <span id="resp-message"></span></li>
+            </ul>
+
+            <p>We'll contact you soon with audition details. Meanwhile, feel free to explore our <a href="albums.html">Albums & Tours</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://youtube.com/@euphonygh?si=TuZj39Jy_JON9kGk" target="_blank" aria-label="GitHub">
+                <img src="images/youtube.svg" alt="Youtube Logo">
+            </a>
+            <a href="https://www.instagram.com/euphony_gh?igsh=MTYxNWF0NGaThzdQ==" target="_blank" aria-label="LinkedIn">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="https://facebook.com/EuphonyGH" target="_blank" aria-label="X">
+                <img src="images/facebook.svg" alt="facebook Logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Euphony GH | Ghana</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module">
+        // Parse query string and display submitted data
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("resp-name").textContent = params.get("name") || "Not provided";
+        document.getElementById("resp-email").textContent = params.get("email") || "Not provided";
+        document.getElementById("resp-voice").textContent = params.get("voice") || "Not provided";
+        document.getElementById("resp-message").textContent = params.get("message") || "Not provided";
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

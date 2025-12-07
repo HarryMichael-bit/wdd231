@@ -397,3 +397,19 @@ summary.details-btn:hover {
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
 }
+
+.video-link {
+    display: inline-block;
+    background-color: #3F51B5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.video-link:hover {
+    background-color: #283593;
+    transform: scale(1.05);
+}

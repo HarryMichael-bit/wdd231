@@ -66,6 +66,31 @@ if (lastModified) {
 }
 });
 
+function openModal(album) {
+  const modal = document.getElementById("albumModal");
+  const body = document.getElementById("modalBody");
 
+  body.innerHTML = `
+    <h3>${album.title}</h3>
+    <p><strong>Year:</strong> ${album.year}</p>
+    <p><strong>Location:</strong> ${album.location}</p>
+    <p>${album.description}</p>
+    <h4>Highlights</h4>
+    <ul>
+      ${album.highlights.map(h => `<li>${h}</li>`).join("")}
+    </ul>
+  `;
 
-   
+  modal.style.display = "block";
+}
+
+document.getElementById("closeModal").addEventListener("click", () => {
+  document.getElementById("albumModal").style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("albumModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});

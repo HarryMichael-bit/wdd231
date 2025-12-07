@@ -22,5 +22,93 @@
         "location": "Legon Seventh Day Adventist Church, Accra-Ghana",
         "description": "Another grand performance in Accra, featuring contemporary chorale groups.",
         "highlights": ["Ministrations", "Choir collaborations", "Soloist Showcase"]
+    },
+    {
+        "title": "Body in Worship and Dance",
+        "year": "2023",
+        "image": "images/performance1.jpg",
+        "location": "Garrison Methodist-Presbyterian",
+        "description": "A night of Praise and worship",
+        "highlights": ["Red Carpet, Invited Choirs, Dance Performances"]
+    },
+    {
+        "title": "Deep Within",
+        "year": "2022",
+        "image": "images/performance2.jpg",
+        "location": "Kasoa Psalms Studios",
+        "description": "A Live recording and performance session",
+        "highlights": ["Exclusive on YouTube, Facebook, Tiktok"]
+    },
+    {
+        "title": "Praise and Pray",
+        "year": "2019",
+        "image": "images/performance3.jpg",
+        "location": "National Theater Exhibition Hall",
+        "description": "Singing to God with gratitude in ouur hearts",
+        "highlights": ["La Chorale Ghana, Invited Choirs, Drama Performances"]
+    },
+    {
+        "title": "Happy Sabbath with Kwaku Opare Adasioko",
+        "year": "2020",
+        "image": "images/performance4.jpg",
+        "location": "KasaPa Fm 102.5",
+        "description": "Serving our audience with fine tunes",
+        "highlights": ["Live Radio Ministrations, Praises"]
+    },
+    {
+        "title": "Sabbath Service with Euphony",
+        "year": "2018",
+        "image": "images/performance5.jpg",
+        "location": "Legon Seventh Day Adventist Church, Accra-Ghana",
+        "description": "Joining the Church in worship",
+        "highlights": ["Hymns, Solo Performances, Contemporary Worship songs"]
+    },
+    {
+        "title": "Total Praise",
+        "year": "2021",
+        "image": "images/performance6.jpg",
+        "location": "Kasoa Psalms Studios",
+        "description": "A Live recording and performance session",
+        "highlights": ["Exclusive on YouTube, Facebook, Tiktok"]
+    },
+    {
+        "title": "Grace-Full Encounter",
+        "year": "2022",
+        "image": "images/performance7.jpg",
+        "location": "Accra Cultural Arts Centre",
+        "description": "A night with Pastor Godswill TK Mensah (Director, COME MINISTRIES)",
+        "highlights": ["Ministrations, Sermon"]
+    },
+    {
+        "title": "Grace on Wheels",
+        "year": "2024",
+        "image": "images/performance8.jpg",
+        "location": "Agape Temple, Kwabenya",
+        "description": "A musical concert with the Seventh-Day Adventist Church in Kwabenya",
+        "highlights": ["Music Concert, Solo Performances, Testemonies"]
+    },
+    {
+        "title": "Wo bohye",
+        "year": "2024",
+        "image": "images/performance9.jpg",
+        "location": "Kasoa Psalms Studios",
+        "description": "A Live recording and performance session",
+        "highlights": ["Exclusive on YouTube, Facebook, Tiktok"]
+    },
+    {
+        "title": "Bebiara beye yie",
+        "year": "2024",
+        "image": "images/performance10.jpg",
+        "location": "Kasoa Psalms Studios",
+        "description": "A Live recording and performance session",
+        "highlights": ["Exclusive on YouTube, Facebook, Tiktok"]
+    },
+    {
+        "title": "Ne Nyinaa Mede Ma Wo",
+        "year": "2024",
+        "image": "images/performance11.jpg",
+        "location": "Kasoa Psalms Studios",
+        "description": "A Live recording and performance session",
+        "highlights": ["Exclusive on YouTube, Facebook, Tiktok"]
     }
 ]

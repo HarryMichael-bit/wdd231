@@ -22,30 +22,33 @@ const members = [
 ];
 
 // Populate concerts
-const concertGallery = document.getElementById('concert-gallery');
-concerts.forEach(concert => {
-    const card = document.createElement('div');
-    card.classList.add('concert-card');
-    card.innerHTML = `
+  const concertGallery = document.getElementById('concert-gallery');
+  if (concertGallery) {
+    concerts.forEach(concert => {
+      const card = document.createElement('div');
+      card.classList.add('concert-card');
+      card.innerHTML = `
       <img src="${concert.img}" alt="Concert image">
       <p>${concert.desc}</p>
     `;
-    concertGallery.appendChild(card);
-});
-
+      concertGallery.appendChild(card);
+    });
+  }
 // Populate members
-const memberCards = document.getElementById('member-cards');
-members.forEach(member => {
-    const card = document.createElement('div');
-    card.classList.add('member-card');
-    card.innerHTML = `
+  const memberCards = document.getElementById('member-cards');
+  if (memberCards) {
+    members.forEach(member => {
+      const card = document.createElement('div');
+      card.classList.add('member-card');
+      card.innerHTML = `
       <img src="${member.img}" alt="${member.name}">
       <h3>${member.name}</h3>
       <p>${member.role}</p>
     `;
-    memberCards.appendChild(card);
-});
-
+      memberCards.appendChild(card);
+    });
+  }
+  
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();

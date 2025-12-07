@@ -7,7 +7,7 @@
 
 /* Body & fonts */
 body {
-    font-family: 'Opn Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
@@ -48,7 +48,7 @@ header {
 
 .navigation a.active, 
 .navigation a:hover {
-    background: #cc0000;
+    background: #CC3D3D;
     color: #fff;
     border-radius: 4px;
 }
@@ -189,7 +189,7 @@ footer {
 .youtube-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: #FF0000;
+    background: #CC0000;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -198,7 +198,7 @@ footer {
 }
 
 .youtube-btn:hover {
-    background: #cc0000;
+    background: #990000;
 }
 
 /* Responsive nav */
@@ -229,7 +229,7 @@ footer {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background: #FF6F61;
+    background: #E85A50;
     color: #fff;
     font-size: 1.1rem;
     font-weight: bold;
@@ -239,7 +239,7 @@ footer {
 }
 
 .cta-button:hover {
-    background: #e85a50;
+    background: #CC3D3D;
     transform: scale(1.05);
 }
 
@@ -265,4 +265,135 @@ summary.details-btn:hover {
 
 .album-info {
     margin-top: 1rem;
+}
+
+/* Modal overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close {
+    color: #666;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #CC3D3D;
+}
+
+/* Modal body styling */
+#modalBody {
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #444;
+}
+
+#modalBody h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #3F51B5;
+}
+
+#modalBody p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+#modalBody strong {
+    color: #333;
+}
+
+#modalBody h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #E85A50;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+}
+
+#modalBody ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+#modalBody ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+/* Simple-fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Album details styling */
+.albums-info {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.albums-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #3F51B5;
+}
+
+.albums-info p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.albums-info strong {
+    color: #333;
+}
+
+.albums-info h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #E85A50;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+}
+
+.albums-info ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.albums-info ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }

@@ -48,7 +48,8 @@ header {
 
 .navigation a.active, 
 .navigation a:hover {
-    background: #FF6F61;
+    background: #cc0000;
+    color: #fff;
     border-radius: 4px;
 }
 
